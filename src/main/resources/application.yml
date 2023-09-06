@@ -12,9 +12,10 @@ spring:
 #           表示只接收xxx.com域名的请求
             - Host=xxx.com
 #           表示cookie必须得是xxxx的请求
-            - Cookie=xxxx
           filters:
 #            StripPrefix表示 将会把path中的第一段去掉，然后将请求转为 uri + / + path去掉第一段后的路径，对于path= /gateway/**，那么就是 `http://localhost:8080/**`
             - StripPrefix=1
+
+
 server:
   port: 8090
